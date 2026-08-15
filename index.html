@@ -112,6 +112,47 @@
       line-height: 1.8;
     }
 
+    /* よくある質問ボタン */
+    .faq-button {
+      display: inline-block;
+      padding: 13px 25px;
+      margin-bottom: 20px;
+      border: 0;
+      border-radius: 12px;
+      background: #00d631;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 3px 10px #0003;
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .faq-button:hover {
+      background: #00b92a;
+      transform: translateY(-2px);
+    }
+
+    .faq-button:active {
+      transform: translateY(0);
+    }
+
+    /* 使い方GIF */
+    .usage {
+      text-align: center;
+    }
+
+    .start-gif {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 12px;
+    }
+
     @media (max-width: 600px) {
       .hero {
         padding: 60px 20px 45px;
@@ -140,6 +181,7 @@
 
 <body>
 
+  <!-- ヒーロー -->
   <section class="hero">
 
     <h1>
@@ -147,7 +189,6 @@
         src="icon.svg"
         alt=""
         class="title-icon"
-        role="img"
       >
       Scratch Addons
     </h1>
@@ -224,14 +265,46 @@
     </section>
 
 
+    <!-- 使い方 -->
+    <section class="card usage">
+
+      <h2>使い方</h2>
+
+      <!-- よくある質問 -->
+      <button
+        type="button"
+        class="faq-button"
+      >
+        よくある質問
+      </button>
+
+      <img
+        src="start.gif"
+        alt="Scratch Addonsの使い方"
+        class="start-gif"
+      >
+
+      <p class="about">
+        共有マークを押して、
+        「Scratch Addons」を選択しましょう。
+        <br>
+        確認画面では「はい」を押してください。
+      </p>
+
+    </section>
+
+
     <!-- 注意 -->
     <section class="card">
 
       <h2>⚠️ 注意</h2>
 
       <p class="about">
-        Scratch上では、Scratch Addonsについて
+
+        Scratch上では、
+        Scratch Addonsについて
         言及・宣伝しないでください。
+
         <br><br>
 
         詳しくは
@@ -243,6 +316,7 @@
           Scratch Teamの方針
         </a>
         をご覧ください。
+
       </p>
 
     </section>
