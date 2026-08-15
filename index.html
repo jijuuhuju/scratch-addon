@@ -3,17 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Scratch Addons</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background-color: #00d631;
+      min-height: 100vh;
+      background: #00d631;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      color: #222;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      color: white;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 800;
+    }
+
+    .title-icon {
+      width: 44px;
+      height: 44px;
+      vertical-align: -6px;
+      margin-right: 8px;
+    }
+
+    .hero p {
+      margin: 16px 0 30px;
+      font-size: 20px;
+    }
+
+    .start-button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: white;
+      color: #00a926;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px #0003;
+      transition: transform 0.15s ease;
+    }
+
+    .start-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 18px #0003;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      gap: 12px;
+    }
+
+    .feature {
+      padding: 16px;
+      background: #f3f3f3;
+      border-radius: 12px;
+      font-size: 17px;
+    }
+
+    .notice {
+      background: #fff8d8;
+      border-radius: 12px;
+      padding: 18px;
+      line-height: 1.7;
+    }
+
+    .notice a {
+      color: #00751d;
+      font-weight: bold;
+    }
+
+    .about {
+      line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 60px 20px 45px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .title-icon {
+        width: 32px;
+        height: 32px;
+        vertical-align: -4px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
+
+  <section class="hero">
+
+    <h1>
+      <img
+        src="icon.svg"
+        alt=""
+        class="title-icon"
+        role="img"
+      >
+      Scratch Addons
+    </h1>
+
+    <p>
+      Scratchをもっと自由に、アイデアを生み出そう
+    </p>
+
+    <a class="start-button" href="#">
+      ショートカットからスタート
+    </a>
+
+  </section>
+
+
+  <main class="content">
+
+    <!-- 機能 -->
+    <section class="card">
+
+      <h2>機能</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          🎨 メニューバー色変更
+        </div>
+
+        <div class="feature">
+          📊 FPS表示
+        </div>
+
+        <div class="feature">
+          🌙 ダークブロック
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Chrome拡張機能とは別物 -->
+    <section class="card">
+
+      <div class="notice">
+
+        ※ Chrome拡張機能の
+        <strong>Scratch Addons</strong>
+        とは別物です。
+        <br>
+
+        ※ This project is different from the
+        Chrome extension
+        <strong>Scratch Addons</strong>.
+
+      </div>
+
+    </section>
+
+
+    <!-- Scratch Addonsとは -->
+    <section class="card">
+
+      <h2>
+        スクラッチアドオンとは？
+      </h2>
+
+      <p class="about">
+        スクラッチアドオンは、
+        Scratchの見た目を自由に変えられるようにした
+        Scratch向けのModです。
+      </p>
+
+    </section>
+
+
+    <!-- 注意 -->
+    <section class="card">
+
+      <h2>⚠️ 注意</h2>
+
+      <p class="about">
+        Scratch上では、Scratch Addonsについて
+        言及・宣伝しないでください。
+        <br><br>
+
+        詳しくは
+        <a
+          href="https://scratch.mit.edu/discuss/topic/284272/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Scratch Teamの方針
+        </a>
+        をご覧ください。
+      </p>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
