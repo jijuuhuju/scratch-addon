@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>よくある質問 - Scratch Addons</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #00d631;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      color: #222;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: white;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    .title-icon {
+      width: 40px;
+      height: 40px;
+      vertical-align: -5px;
+      margin-right: 8px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* FAQ */
+    .faq {
+      background: white;
+      border-radius: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 5px 18px #0003;
+      overflow: hidden;
+    }
+
+    .question {
+      list-style: none;
+      padding: 22px 24px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    .question::-webkit-details-marker {
+      display: none;
+    }
+
+    .question::after {
+      content: "+";
+      font-size: 26px;
+      font-weight: normal;
+      transition: transform 0.25s ease;
+    }
+
+    .faq[open] .question::after {
+      transform: rotate(45deg);
+    }
+
+    .answer-wrap {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .answer {
+      padding: 0 24px 22px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .notice {
+      background: #fff8d8;
+      border-radius: 12px;
+      padding: 18px;
+      line-height: 1.7;
+    }
+
+    .notice a {
+      color: #00751d;
+      font-weight: bold;
+    }
+
+    /* 戻る */
+    .back-area {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: white;
+      color: #00a926;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 10px #0003;
+      transition: transform 0.15s ease;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 45px 20px 30px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .title-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .question {
+        padding: 19px 20px;
+        font-size: 16px;
+      }
+
+      .answer {
+        padding: 0 20px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>
+      <img
+        src="icon.svg"
+        alt=""
+        class="title-icon"
+      >
+      よくある質問
+    </h1>
+  </section>
+
+
+  <main class="content">
+
+    <!-- Q1 -->
+    <details class="faq">
+      <summary class="question">
+        Scratch Addonsとは？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          Scratchの見た目を自由に変更できるようにした
+          Scratch向けのModです。
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Q2 -->
+    <details class="faq">
+      <summary class="question">
+        どんな機能がありますか？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          現在は、メニューバーの色変更、
+          FPS表示、ダークブロックなどの機能があります。
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Q3 -->
+    <details class="faq">
+      <summary class="question">
+        どうやって使いますか？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          トップページの
+          「ショートカットからスタート」
+          を押してください。
+          <br><br>
+          共有マークを押して、
+          「Scratch Addons」を選択します。
+          <br>
+          確認画面では「許可」を押してください。
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Q4 -->
+    <details class="faq">
+      <summary class="question">
+        Chrome拡張機能のScratch Addonsですか？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          いいえ。別のプロジェクトです。
+          Chrome拡張機能のScratch Addonsとは関係ありません。
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Q5 -->
+    <details class="faq">
+      <summary class="question">
+        Scratch上で紹介できますか？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          <div class="notice">
+            Scratch上では、
+            Scratch Addonsについて
+            言及・宣伝しないでください。
+
+            <br><br>
+
+            詳しくは
+            <a
+              href="https://scratch.mit.edu/discuss/topic/284272/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Scratch Teamの方針
+            </a>
+            をご覧ください。
+          </div>
+        </div>
+      </div>
+    </details>
+
+
+    <!-- Q6 -->
+    <details class="faq">
+      <summary class="question">
+        安全ですか？
+      </summary>
+
+      <div class="answer-wrap">
+        <div class="answer">
+          信頼できないショートカットやスクリプトは
+          実行しないでください。
+          <br><br>
+          このページから提供しているもの以外のものは
+      信頼してない場合安易に追加しないことをおすすめします。
+        </div>
+      </div>
+    </details>
+
+
+    <!-- 戻る -->
+    <div class="back-area">
+      <a
+        href="index.html"
+        class="back-button"
+      >
+        ← ホームに戻る
+      </a>
+    </div>
+
+  </main>
+
+
+  <script>
+    document.querySelectorAll(".faq").forEach(details => {
+      const summary = details.querySelector(".question");
+      const content = details.querySelector(".answer-wrap");
+
+      summary.addEventListener("click", event => {
+        event.preventDefault();
+
+        if (!details.open) {
+          details.open = true;
+
+          content.style.height = "0px";
+
+          requestAnimationFrame(() => {
+            content.style.transition = "height 0.3s ease";
+            content.style.height = content.scrollHeight + "px";
+          });
+
+          content.addEventListener("transitionend", function handler() {
+            content.style.height = "auto";
+            content.style.transition = "";
+            content.removeEventListener("transitionend", handler);
+          });
+
+        } else {
+          content.style.height = content.scrollHeight + "px";
+
+          requestAnimationFrame(() => {
+            content.style.transition = "height 0.3s ease";
+            content.style.height = "0px";
+          });
+
+          content.addEventListener("transitionend", function handler() {
+            details.open = false;
+            content.style.transition = "";
+            content.removeEventListener("transitionend", handler);
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
