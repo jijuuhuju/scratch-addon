@@ -24,6 +24,7 @@
       color: #222;
     }
 
+    /* ヒーロー */
     .hero {
       text-align: center;
       padding: 80px 20px 60px;
@@ -48,6 +49,7 @@
       font-size: 20px;
     }
 
+    /* スタートボタン */
     .start-button {
       display: inline-block;
       padding: 14px 28px;
@@ -65,12 +67,14 @@
       transform: translateY(-2px);
     }
 
+    /* コンテンツ */
     .content {
       max-width: 900px;
       margin: 0 auto;
       padding: 20px;
     }
 
+    /* カード */
     .card {
       background: white;
       border-radius: 18px;
@@ -84,6 +88,7 @@
       margin-bottom: 20px;
     }
 
+    /* 機能 */
     .features {
       display: grid;
       gap: 12px;
@@ -96,6 +101,7 @@
       font-size: 17px;
     }
 
+    /* 注意・説明 */
     .notice {
       background: #fff8d8;
       border-radius: 12px;
@@ -112,18 +118,17 @@
       line-height: 1.8;
     }
 
-    /* よくある質問ボタン */
+    /* FAQボタン */
     .faq-button {
       display: inline-block;
       padding: 13px 25px;
       margin-bottom: 20px;
-      border: 0;
       border-radius: 12px;
       background: #00d631;
       color: white;
+      text-decoration: none;
       font-size: 16px;
       font-weight: bold;
-      cursor: pointer;
       box-shadow: 0 3px 10px #0003;
       transition:
         transform 0.15s ease,
@@ -135,11 +140,7 @@
       transform: translateY(-2px);
     }
 
-    .faq-button:active {
-      transform: translateY(0);
-    }
-
-    /* 使い方GIF */
+    /* 使い方 */
     .usage {
       text-align: center;
     }
@@ -153,6 +154,7 @@
       border-radius: 12px;
     }
 
+    /* スマホ */
     @media (max-width: 600px) {
       .hero {
         padding: 60px 20px 45px;
@@ -197,7 +199,10 @@
       Scratchをもっと自由に、アイデアを生み出そう
     </p>
 
-    <a class="start-button" href="#">
+    <a
+      class="start-button"
+      href="#"
+    >
       ショートカットからスタート
     </a>
 
@@ -270,14 +275,15 @@
 
       <h2>使い方</h2>
 
-      <!-- よくある質問 -->
-      <button
-        type="button"
+      <!-- FAQ -->
+      <a
         class="faq-button"
+        href="faq.html"
       >
         よくある質問
-      </button>
+      </a>
 
+      <!-- 操作GIF -->
       <img
         src="start.gif"
         alt="Scratch Addonsの使い方"
