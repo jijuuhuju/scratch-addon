@@ -88,6 +88,19 @@
       margin-bottom: 20px;
     }
 
+    /* セクションタイトル */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .emoji-icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
     /* 機能 */
     .features {
       display: grid;
@@ -167,6 +180,11 @@
 
       .card {
         padding: 22px;
+      }
+
+      .emoji-icon {
+        width: 28px;
+        height: 28px;
       }
     }
   </style>
@@ -248,7 +266,12 @@
     <!-- Scratch Addonsとは -->
     <section class="card">
 
-      <h2>
+      <h2 class="section-title">
+        <img
+          src="emoji1.svg"
+          alt=""
+          class="emoji-icon"
+        >
         スクラッチアドオンとは？
       </h2>
 
@@ -287,7 +310,14 @@
     <!-- 注意 -->
     <section class="card">
 
-      <h2>⚠️ 注意</h2>
+      <h2 class="section-title">
+        <img
+          src="emoji2.svg"
+          alt=""
+          class="emoji-icon"
+        >
+        注意
+      </h2>
 
       <p class="about">
 
